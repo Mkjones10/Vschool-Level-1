@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.container{
+    display: grid;
+    height: 200vh ;
+    width: 100%;
+    grid-template-columns: repeat(4, 768px);
+    grid-template-rows: repeat(4, 70px);
+    
+
+}
+
+}

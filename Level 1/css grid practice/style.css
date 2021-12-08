@@ -1,0 +1,165 @@
+
+.container{
+    display: grid;
+    height: 200vh;
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: repeat(3,100px);
+    grid-gap: 10px;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar content content sidebar2"
+    "footer footer footer footer"
+
+}
+.nav{
+    background-color: red;
+    height: 100fr;
+    grid-area: nav;
+}
+.sidebar{
+    background-color: blue;
+    height: 100fr;
+    grid-area: sidebar;
+
+}
+.content{
+    background-color: yellow;
+    height: 100fr;
+    grid-area: content;
+
+}
+.sidebar2{
+    background-color: pink;
+    height: 100fr;
+    grid-area: sidebar2;
+}
+.footer{
+    background-color: green;
+    height: 100fr;
+    grid-area: footer;
+}
+@media screen and( min-device-width:320px) and (max-device-width:480px){
+    .container{
+        display: grid;
+        height: 200vh;
+        grid-template-columns: repeat(4, 1fr );
+        grid-template-rows: repeat(5,100px);
+        grid-gap: 10px;
+        grid-template-areas:
+        "nav nav nav nav"
+        "sidebar sidebar sidevar siderbar"
+        "content content content content"
+        "sidebar2 sidebar2 sidebar2 sidebar2"
+        "footer footer footer footer"
+    
+    }
+    .nav{
+        background-color: red;
+        height: 100fr;
+        grid-area: nav;
+    }
+    .sidebar{
+        background-color: blue;
+        height: 100fr;
+        grid-area: sidebar;
+    
+    }
+    .content{
+        background-color: yellow;
+        height: 100fr;
+        grid-area: content;
+    
+    }
+    .sidebar2{
+        background-color: pink;
+        height: 100fr;
+        grid-area: sidebar2;
+    }
+    .footer{
+        background-color: green;
+        height: 100fr;
+        grid-area: footer;    
+}
+}
+@media screen and( min-device-width:1200px) and (max-device-width:1600px){
+.container{
+    display: grid;
+    height: 200vh;
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: repeat(3,100px);
+    grid-gap: 10px;
+    grid-template-areas:
+    "nav nav nav nav"
+    "sidebar content content sidebar2"
+    "footer footer footer footer"
+
+}
+.nav{
+    background-color: red;
+    height: 100fr;
+    grid-area: nav;
+}
+.sidebar{
+    background-color: blue;
+    height: 100fr;
+    grid-area: sidebar;
+
+}
+.content{
+    background-color: yellow;
+    height: 100fr;
+    grid-area: content;
+
+}
+.sidebar2{
+    background-color: pink;
+    height: 100fr;
+    grid-area: sidebar2;
+}
+.footer{
+    background-color: green;
+    height: 100fr;
+    grid-area: footer;
+}
+}
+@media screen and( min-device-width:768px) and (max-device-width:1024px){
+    .container{
+        display: grid;
+        height: 200vh;
+        grid-template-columns: repeat(4, 1fr );
+        grid-template-rows: repeat(3,100px);
+        grid-gap: 10px;
+        grid-template-areas:
+        "nav nav nav nav"
+        "sidebar content content sidebar2"
+        "footer footer footer footer"
+    
+    }
+    .nav{
+        background-color: red;
+        height: 100fr;
+        grid-area: nav;
+    }
+    .sidebar{
+        background-color: blue;
+        height: 100fr;
+        grid-area: sidebar;
+    
+    }
+    .content{
+        background-color: yellow;
+        height: 100fr;
+        grid-area: content;
+    
+    }
+    .sidebar2{
+        background-color: pink;
+        height: 100fr;
+        grid-area: sidebar2;
+    }
+    .footer{
+        background-color: green;
+        height: 100fr;
+        grid-area: footer;
+    }
+    }
