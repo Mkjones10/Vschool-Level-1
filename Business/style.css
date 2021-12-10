@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: color #f4f4f4;
+    margin: 0px;
+    padding: 0px; ;
+}
+/*global*/
+.container{
+    width:80% ;
+    margin: auto;
+    overflow: hidden;
+}
+.dark{
+    padding:15px ;
+    background:rgb(170, 72, 26);
+    color:#fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.bean{
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(130, 49, 11);
+    color: #fff;
+}
+  .nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 8vh;
+      background-color:rgb(170, 72, 26);
+      min-height: 70px;
+      border-bottom: #ebebeb 3px solid;
+  }
+  
+  .brand{
+    color:#fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.links li{
+    list-style: none;
+}
+.links a{
+    color:#fff;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 3px;
+
+}
+a.active,a:hover{
+    background: rgb(226, 180, 94);
+    transition: .5s;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.btn{
+    background-color: rgb(240, 234, 234);
+    padding: 0.2rem 0.6rem;
+    text-decoration: none;
+    border:0 ;
+}
+html{
+    font-size: 62.5%;
+}
+#showcase{
+    min-height: 400px;
+    background: url(https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlJTIwYmVhbnxlbnwwfHwwfHw%3D&w=1000&q=80) 200px;
+    text-align: center;
+    color: #fff;
+}
+#showcase h1{
+    margin: top 100px; ;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+#CoffeeNews{
+    padding:15px ;
+    color: #fff;
+    background:rgb(170, 72, 26) ;
+}
+#CoffeeNews h1{
+    float: left;
+}
+#CoffeeNews h2{
+    float: left;
+}
+#CoffeeNews form{
+    float:right ;
+}
+
+#CoffeeNews input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+#CoffeeNews .btn{
+    float: right;
+    height: 30px;
+    background: wheat;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+   float: left; 
+   width: 33%;
+   padding: 20px;
+   text-align:center ;
+   justify-content: center;
+}
+#boxes .box img{
+    width: 150px;
+}
+aside#sidebar{
+  float: right;  
+  width: 30%;
+  margin-top: 10px;
+}
+article#main{
+    float: left;
+    width: 65%;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color:rgb(226, 180, 94); 
+    text-align: center;
+}
+@media(max-width:768px){
+    .toggle-button{
+        display: flex;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+.links{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.links ul{
+width: 100%;
+flex-direction: column;
+}
+.links.active{
+    display: flex ;
+}
+#showcase h1{
+   margin-top: 40px; 
+
+}
+#CoffeeNews h1, 
+#coffeeNews form,
+#boxes .box,
+article#main,
+aside#sidebar
+{
+    float: none;
+    text-align: center;
+    width: 100%;
+
+}
+#CoffeeNews .btn{
+    display: block;
+    width: 100%;
+}
+
+
+}
